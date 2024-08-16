@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_light">
+
+    <View
+        android:id="@+id/home_banner"
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        android:background="@drawable/sh_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_location_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/sora"
+        android:text="@string/home_location_label"
+        android:textColor="@color/grey_lighter"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/home_location"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/home_location"
+        app:layout_constraintTop_toTopOf="@id/home_banner" />
+
+    <TextView
+        android:id="@+id/home_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/sora"
+        android:textColor="@color/surface_normal_active"
+        android:textFontWeight="600"
+        app:layout_constraintEnd_toEndOf="@id/home_banner"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/home_banner"
+        app:layout_constraintTop_toBottomOf="@id/home_location_label"
+        tools:text="Bilzen, Tanjungbalai" />
+
+    <ImageView
+        android:id="@+id/home_location_arrow"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/arrow_down"
+        android:src="@drawable/ic_arrow_down"
+        app:layout_constraintBottom_toBottomOf="@id/home_location"
+        app:layout_constraintStart_toEndOf="@id/home_location"
+        app:layout_constraintTop_toTopOf="@id/home_location"
+        app:tint="@color/surface_normal_active" />
+
+    <EditText
+        android:id="@+id/home_searchfield"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/sh_searchfield"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/sora"
+        android:hint="@string/searchfield_hint"
+        android:padding="16dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/home_filter"
+        app:layout_constraintStart_toStartOf="@id/home_banner"
+        app:layout_constraintTop_toBottomOf="@id/home_location" />
+
+    <View
+        android:id="@+id/home_filter"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/sh_button"
+        app:layout_constraintBottom_toBottomOf="@id/home_searchfield"
+        app:layout_constraintEnd_toEndOf="@id/home_banner"
+        app:layout_constraintStart_toEndOf="@id/home_searchfield"
+        app:layout_constraintTop_toTopOf="@id/home_searchfield" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_filter"
+        app:layout_constraintBottom_toBottomOf="@id/home_filter"
+        app:layout_constraintEnd_toEndOf="@id/home_filter"
+        app:layout_constraintStart_toStartOf="@id/home_filter"
+        app:layout_constraintTop_toTopOf="@id/home_filter"
+        app:tint="@color/surface_white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

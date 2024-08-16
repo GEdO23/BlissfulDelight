@@ -6,7 +6,7 @@
   <group android:scaleX="0.8"
       android:scaleY="0.7998567"
       android:translateX="5.0251"
-      android:translateY="5.0277987">>
+      android:translateY="5.0277987">
         
       <path android:fillColor="#853f10" android:pathData="m14.485,0.25c-7.886,0 -14.235,6.349 -14.235,14.235v21.273c0,7.886 6.349,14.235 14.235,14.235h21.282c7.886,0 14.235,-6.349 14.235,-14.235v-8.193h-7.479c0,0 -2.652,14.876 -17.411,14.876 -8.177,0 -17.345,-6.332 -17.345,-17.345 0,-8.183 6.803,-17.359 17.359,-17.359 14.663,0 17.396,14.795 17.396,14.795h7.48v-8.047c0,-7.886 -6.349,-14.235 -14.235,-14.235z" android:strokeColor="#884110" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeWidth="0.5"/>
         

@@ -1,8 +1,9 @@
-package br.com.blissfuldelight
+package br.com.blissfuldelight.ui.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import br.com.blissfuldelight.R
 
 class OnboardingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
