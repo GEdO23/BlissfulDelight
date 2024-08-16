@@ -11,15 +11,15 @@
     <color name="brown_dark_active">#593823</color>
     <color name="brown_darker">#452B1B</color>
 
-    <color name="gray_lighter">#A2A2A2</color>
-    <color name="gray_light_hover">#909090</color>
-    <color name="gray_light_active">#797979</color>
-    <color name="gray_normal">#313131</color>
-    <color name="gray_normal_hover">#2A2A2A</color>
-    <color name="gray_normal_active">#242424</color>
-    <color name="gray_dark">#111111</color>
-    <color name="gray_dark_hover">#0C0C0C</color>
-    <color name="gray_dark_active">#050505</color>
+    <color name="grey_lighter">#A2A2A2</color>
+    <color name="grey_light_hover">#909090</color>
+    <color name="grey_light_active">#797979</color>
+    <color name="grey_normal">#313131</color>
+    <color name="grey_normal_hover">#2A2A2A</color>
+    <color name="grey_normal_active">#242424</color>
+    <color name="grey_dark">#111111</color>
+    <color name="grey_dark_hover">#0C0C0C</color>
+    <color name="grey_dark_active">#050505</color>
 
     <color name="surface_white">#FFFFFF</color>
     <color name="surface_white_hover">#F9F9F9</color>

@@ -11,8 +11,43 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/onboarding_background"
         android:scaleType="fitCenter"
-        android:scrollY="90dp"
+        android:scrollY="125dp"
         android:src="@drawable/img_coffee_background" />
+
+    <TextView
+        android:id="@+id/onboarding_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sora"
+        android:letterSpacing="0.005"
+        android:lineHeight="48sp"
+        android:text="@string/onboarding_title"
+        android:textAlignment="center"
+        android:textColor="@color/surface_light"
+        android:textFontWeight="600"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/onboarding_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_subtitle"
+        app:layout_constraintStart_toStartOf="@id/onboarding_subtitle" />
+
+    <TextView
+        android:id="@+id/onboarding_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/sora"
+        android:letterSpacing="0.01"
+        android:lineHeight="21sp"
+        android:text="@string/onboarding_subtitle"
+        android:textAlignment="center"
+        android:textColor="@color/grey_lighter"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/onboarding_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/onboarding_button"
@@ -30,9 +65,10 @@
         android:textColor="@color/surface_white"
         android:textFontWeight="600"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/onboarding_background"
-        app:layout_constraintEnd_toEndOf="@id/onboarding_background"
-        app:layout_constraintStart_toStartOf="@id/onboarding_background" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_max="320dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
