@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Blissful Delight</string>
+    <string name="onboarding_background">A imagem de fundo da tela de onboarding</string>
+    <string name="onboarding_button">Get Started</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brown_light">#F9F2ED</color>
+    <color name="brown_light_hover">#F6EBE4</color>
+    <color name="brown_light_active">#EDD6C8</color>
+    <color name="brown_normal">#C67C4E</color>
+    <color name="brown_normal_hover">#B27046</color>
+    <color name="brown_normal_active">#9E633E</color>
+    <color name="brown_dark">#955D3B</color>
+    <color name="brown_dark_hover">#774A2F</color>
+    <color name="brown_dark_active">#593823</color>
+    <color name="brown_darker">#452B1B</color>
+
+    <color name="gray_lighter">#A2A2A2</color>
+    <color name="gray_light_hover">#909090</color>
+    <color name="gray_light_active">#797979</color>
+    <color name="gray_normal">#313131</color>
+    <color name="gray_normal_hover">#2A2A2A</color>
+    <color name="gray_normal_active">#242424</color>
+    <color name="gray_dark">#111111</color>
+    <color name="gray_dark_hover">#0C0C0C</color>
+    <color name="gray_dark_active">#050505</color>
+
+    <color name="surface_white">#FFFFFF</color>
+    <color name="surface_white_hover">#F9F9F9</color>
+    <color name="surface_white_active">#EDEDED</color>
+    <color name="surface_light">#F9F9F9</color>
+    <color name="surface_light_hover">#EDEDED</color>
+    <color name="surface_light_active">#E3E3E3</color>
+    <color name="surface_normal">#F4F4F4</color>
+    <color name="surface_normal_hover">#E6E6E6</color>
+    <color name="surface_normal_active">#D8D8D8</color>
+    <color name="surface_dark">#EEEEEE</color>
+
+    <color name="surface_black">#000000</color>
+</resources>
