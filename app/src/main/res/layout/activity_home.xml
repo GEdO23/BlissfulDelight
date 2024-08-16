@@ -68,11 +68,14 @@
         android:drawablePadding="10dp"
         android:fontFamily="@font/sora"
         android:hint="@string/searchfield_hint"
+        android:inputType="textFilter"
         android:padding="16dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@id/home_filter"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/home_banner"
-        app:layout_constraintTop_toBottomOf="@id/home_location" />
+        app:layout_constraintTop_toBottomOf="@id/home_location"
+        app:layout_constraintWidth_max="488dp" />
 
     <View
         android:id="@+id/home_filter"
@@ -89,6 +92,7 @@
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:contentDescription="@string/filter"
         android:src="@drawable/ic_filter"
         app:layout_constraintBottom_toBottomOf="@id/home_filter"
         app:layout_constraintEnd_toEndOf="@id/home_filter"
