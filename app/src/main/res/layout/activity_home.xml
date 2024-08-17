@@ -10,7 +10,7 @@
         android:id="@+id/home_banner"
         android:layout_width="0dp"
         android:layout_height="290dp"
-        android:background="@drawable/sh_container"
+        android:background="@drawable/shape_container"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -64,7 +64,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:autofillHints=""
-        android:background="@drawable/sh_searchfield"
+        android:background="@drawable/shape_searchfield"
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="10dp"
         android:fontFamily="@font/sora"
@@ -85,7 +85,7 @@
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="24dp"
-        android:background="@drawable/sh_button"
+        android:background="@drawable/selector_button"
         app:layout_constraintBottom_toBottomOf="@id/home_searchfield"
         app:layout_constraintEnd_toEndOf="@id/home_banner"
         app:layout_constraintStart_toEndOf="@id/home_searchfield"
@@ -113,6 +113,62 @@
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/home_searchfield" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_promotional_banner">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/selector_category"
+                android:fontFamily="@font/sora"
+                android:text="@string/filter_all"
+                android:textColor="@color/grey_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/selector_category"
+                android:fontFamily="@font/sora"
+                android:text="@string/machiato"
+                android:textColor="@color/grey_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/selector_category"
+                android:fontFamily="@font/sora"
+                android:text="@string/latte"
+                android:textColor="@color/grey_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/selector_category"
+                android:fontFamily="@font/sora"
+                android:text="@string/americano"
+                android:textColor="@color/grey_normal" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

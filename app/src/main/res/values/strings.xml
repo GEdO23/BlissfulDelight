@@ -10,4 +10,8 @@
     <string name="filter">Filtro</string>
     <string name="promotional_banner">Promotional banner</string>
     <string name="location_placeholder">Bilzen, Tanjungbalai</string>
+    <string name="filter_all">All Coffee</string>
+    <string name="americano">Americano</string>
+    <string name="latte">Latte</string>
+    <string name="machiato">Machiato</string>
 </resources>
