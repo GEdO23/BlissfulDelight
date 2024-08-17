@@ -1,5 +1,6 @@
 package br.com.blissfuldelight.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -10,5 +11,8 @@ class OnboardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_onboarding)
+
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
     }
 }

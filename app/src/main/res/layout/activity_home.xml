@@ -9,7 +9,7 @@
     <View
         android:id="@+id/home_banner"
         android:layout_width="0dp"
-        android:layout_height="280dp"
+        android:layout_height="290dp"
         android:background="@drawable/sh_container"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +19,7 @@
         android:id="@+id/home_location_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/sora"
         android:text="@string/home_location_label"
         android:textColor="@color/grey_lighter"
@@ -63,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
+        android:autofillHints=""
         android:background="@drawable/sh_searchfield"
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="10dp"
@@ -72,6 +73,7 @@
         android:padding="16dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@id/home_filter"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/home_banner"
         app:layout_constraintTop_toBottomOf="@id/home_location"
@@ -99,6 +101,18 @@
         app:layout_constraintStart_toStartOf="@id/home_filter"
         app:layout_constraintTop_toTopOf="@id/home_filter"
         app:tint="@color/surface_white" />
+
+    <ImageView
+        android:id="@+id/home_promotional_banner"
+        android:layout_width="327dp"
+        android:layout_height="140dp"
+        android:layout_margin="24dp"
+        android:contentDescription="@string/promotional_banner"
+        android:src="@drawable/img_banner_promo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_searchfield" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

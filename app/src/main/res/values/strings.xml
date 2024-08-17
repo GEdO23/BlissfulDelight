@@ -8,4 +8,6 @@
     <string name="arrow_down">Seta para baixo</string>
     <string name="searchfield_hint">Search coffee</string>
     <string name="filter">Filtro</string>
+    <string name="promotional_banner">Promotional banner</string>
+    <string name="location_placeholder">Bilzen, Tanjungbalai</string>
 </resources>
