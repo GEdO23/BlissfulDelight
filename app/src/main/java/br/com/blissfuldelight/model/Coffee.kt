@@ -9,5 +9,6 @@ data class Coffee(
     val ratings: List<Double>,
     val price: BigDecimal,
     val category: Category,
-    val image: String
+    val image: String,
+    val size: Size?
 )
