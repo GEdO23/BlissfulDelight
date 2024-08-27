@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:fontFamily="@font/sora"
+        android:labelFor="@id/home_location"
         android:text="@string/home_location_label"
         android:textColor="@color/grey_lighter"
         android:textSize="12sp"
@@ -115,11 +116,11 @@
         app:layout_constraintTop_toBottomOf="@id/home_searchfield" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginBottom="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -169,6 +170,18 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_coffee_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/horizontalScrollView"
+        app:layout_constraintStart_toStartOf="@id/horizontalScrollView"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView"
+        app:spanCount="2"
+        tools:listitem="@layout/product_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

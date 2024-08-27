@@ -1,10 +1,10 @@
 package br.com.blissfuldelight.model
 
-enum class Category {
-    DEEP_FOAM,
-    EXPRESSO,
-    ICE_HOT,
-    MACHIATO,
-    LATTE,
-    AMERICANO
+enum class Category(val categoryName: String) {
+    DEEP_FOAM("Deep Foam"),
+    EXPRESSO("Expresso"),
+    ICE_HOT("Ice/Hot"),
+    MACHIATO("Machiato"),
+    LATTE("Latte"),
+    AMERICANO("Americano")
 }

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="7.5dp"
+    android:layout_marginBottom="24dp"
+    android:background="@drawable/shape_product_item">
+
+    <FrameLayout
+        android:id="@+id/product_item_photo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/product_item_photo_img"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:contentDescription="@string/coffee_photo"
+            tools:src="@sample/coffe_list.json/coffe_list/photo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:background="#4D000000"
+            android:paddingEnd="10dp"
+            android:paddingStart="4dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:id="@+id/product_item_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:textColor="@color/surface_white"
+                android:textFontWeight="600"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/product_item_rating_star"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@id/product_item_rating_star"
+                app:layout_constraintTop_toTopOf="@id/product_item_rating_star"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="@sample/coffe_list.json/coffe_list/rating" />
+
+            <ImageView
+                android:id="@+id/product_item_rating_star"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="@string/estrela"
+                android:src="@drawable/ic_star"
+                app:layout_constraintEnd_toStartOf="@id/product_item_rating"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintTop_toTopOf="@id/product_item_rating" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/product_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sora"
+        android:textColor="@color/grey_normal_active"
+        android:textFontWeight="600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_item_photo"
+        tools:text="@sample/coffe_list.json/coffe_list/name" />
+
+    <TextView
+        android:id="@+id/product_item_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sora"
+        android:textColor="@color/grey_lighter"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_item_name"
+        tools:text="@sample/coffe_list.json/coffe_list/category" />
+
+    <TextView
+        android:id="@+id/product_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sora"
+        android:textColor="@color/grey_dark_active"
+        android:textFontWeight="600"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/product_item_button_add"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_item_category"
+        tools:text="@sample/coffe_list.json/coffe_list/price" />
+
+    <Button
+        android:id="@+id/product_item_button_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_plus"
+        app:layout_constraintBottom_toBottomOf="@id/product_item_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/product_item_price"
+        app:layout_constraintTop_toTopOf="@id/product_item_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

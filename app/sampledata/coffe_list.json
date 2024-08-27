@@ -1,0 +1,32 @@
+{
+  "coffe_list": [
+    {
+      "name": "Caffe Mocha",
+      "category": "Deep Foam",
+      "rating": 4.8,
+      "price": 4.53,
+      "photo": "@drawable/img_coffee_2"
+    },
+    {
+      "name": "Flat White",
+      "category": "Expresso",
+      "rating": 4.8,
+      "price": 3.53,
+      "photo": "@drawable/img_coffee_3"
+    },
+    {
+      "name": "Mocha Fusi",
+      "category": "Ice/Hot",
+      "rating": 4.8,
+      "price": 7.53,
+      "photo": "@drawable/img_coffee_5"
+    },
+    {
+      "name": "Caffe Panna",
+      "category": "Ice/Hot",
+      "rating": 4.8,
+      "price": 5.53,
+      "photo": "@drawable/img_coffee_4"
+    }
+  ]
+}
